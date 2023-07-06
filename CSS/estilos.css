@@ -1,0 +1,785 @@
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Fugaz One', cursive;
+    background-color: white;
+
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+@import "../bootstrap-5.3.0-dist.zip";
+
+/* CABECERA */
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: black;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navegadores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+
+.logo1{
+    display: flex;
+    width: 370px;
+}
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+
+
+}
+
+colum
+
+.nav-links li a:hover {
+    background-image: linear-gradient(150deg, #9500ff, rgb(93, 8, 119), #764284);
+    color: black;
+    border-radius: 10px;
+    background-color: black;
+  }
+.nav-links li a{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    font-family: 'Fugaz One', cursive;
+    color: white;
+    background-color: black;
+
+}
+
+
+/* .header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.logo{
+    display: flex;
+
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header .nav-links li {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.header .nav-links li a:hover {
+    color: #d96cc7;
+} */
+
+.botonr{
+    text-decoration: none;
+    font-family: 'Fugaz One', cursive;
+    display: flex;
+
+}
+
+.btn{
+    background-color: black;
+    font-family: 'Fugaz One', cursive;
+    align-items: center;
+    display: flex;
+
+}
+
+.header .btn button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, rgb(93, 8, 119), #764284);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.header .btn button:hover {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+
+  }
+.logo1 {
+    width: 250px;
+    }
+    
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+
+.nav-links {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    }
+
+.nav-links li a {
+    padding: 5px;
+}
+
+.btn {
+    margin-top: 10px;
+    }
+
+
+
+/* Media para hacerlo responsive */
+
+/* @media (max-width: 100%) {
+.header {
+    padding: 5px 5%;
+    } */
+
+/* .header .nav-links li {
+    padding: 0 10px;
+    background-color: black;
+    } */
+
+
+@media (min-width: 7480px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+
+    .header .nav-links li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        background-color: black;
+    }
+}
+
+.espacio{
+    display: block;
+    width: 10px;
+    height: 30px;
+    background-color: #111;
+
+}
+
+
+
+.div .travis{
+    width: auto;
+    height: 10px;
+}
+
+.destacado1{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 25px;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+/* IMAGENES  QUE SE MUEVEN*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 900px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+    border: 30px #83abbc;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+h2{
+    color: #764284;
+    outline:  black;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+
+/* TARJETAS DE PRODUCTOS CARDS */
+
+.Productos {
+    display: flex;
+    justify-content: center; /* Centra  los elementos dentro del contenedor */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin: 30px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Fugaz One', cursive;
+}
+
+.cardimg{
+    max-height: 300px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Fugaz One', cursive;
+}
+
+button {
+    padding: 10px ;
+    background: #764284;
+    color: white;
+    border: none;
+    overflow: hidden;
+    border-radius: 0.6em;
+    margin: 6px;
+    display: inline-block;
+}
+
+.gradient {
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.label {
+    top: -1px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-family: 'Fugaz One', cursive;
+    background-color: #764284;
+}
+
+button:hover .transition {
+    width: 14em;
+    height: 14em;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/*PIE DE PAGINA*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+}
+.pie-pagina .footerpie1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+    background-color: black;
+
+}
+.pie-pagina .footerpie1 .boxpie figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.pie-pagina .footerpie1 .boxpie figure img{
+    width: 350px;
+    background-color: black;
+
+}
+.pie-pagina .footerpie1 .boxpie h2{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Fugaz One', cursive;
+
+}
+.pie-pagina .footerpie1 .boxpie p{
+    color: white;    background-color: black;
+}
+.pie-pagina .footerpie1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: white ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .footerpie1 .red-social a:hover{
+    color: aqua;
+    background-color: black;
+
+}
+.pie-pagina .footerpie2{
+    background-color: #83abbc;
+    padding: 15px 10px;
+    text-align: center;
+    color: #764284;
+    background-color: black;
+
+}
+.pie-pagina .footerpie2 small{
+    font-size: 15px;
+    background-color: black;
+}
+
+.red-social{
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.siguenos{
+    background-color: black;
+}
+
+.box{
+    background-color: black;
+}
+
+.logopie{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+@media screen and (max-width:100%){
+    .pie-pagina .footerpie1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/*MERCADO PAGO*/
+.mercado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenmercado {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+/* SUBITULOS */
+.subtitulonike {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+
+
+.nocta {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.imgnocta{
+    display: flex;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* NOCTA CHICO CANGURO GOLF */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 720px 240px;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.column-a img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+.column-b {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.secondary-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* HAALAND */
+
+.halland{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+
+/* INFOR DE LA PAG */
+
+.bienvenido{
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion{
+    display: flex;
+    padding: 70px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoh3{
+    display: flex
+}
+
+
+/* MEDDIO DE PAGO INFO */
+
+.imgtodoslospagos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    
+}
+
+.todoslospagos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+
+/* PAGINA DE REGISTRO */
+
+.containerR{
+    width: 1fr;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Imagenes/nocta7.jpg');
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-contentR{
+    width: 100%;
+    margin: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    opacity: 95%;
+    padding: 70px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-contentR h1{
+    margin-bottom: 60px;
+    color: white;
+    position: relative;
+    background: transparent;
+    font-size: 50px;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+.form-contentR h1 ::after {
+    content: '';
+    width: 30px;
+    border-radius: 3px;
+    background: #764284;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+}
+
+.input-fieldR{
+    margin: 15px ;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.inputR{ 
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #fff;
+}
+
+.inputR::placeholder{
+    color: white;
+}
+
+.input-fieldR i{
+    margin-left: 15px;
+    color: #764284;
+}
+
+.formR p{
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+}
+
+.formR p a{
+    color: #764284;
+    margin-left: 5px;
+}
+
+.btn-fieldR{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.btn-fieldR button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: #764284;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+.input-groupR{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: space-around;
+    
+}
+
+
+.btn-fieldR button.disable {
+    background-color: white;
+    color: #2c2f35;
+}
+
+.inputregistro{
+    border-radius: 10px;
+    padding: 10px;
+    width: 270px;
+}
+
+.olvide{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.input-groupR{
+    border-radius: 10px;
+}
+
+.formularioR{
+    border-radius: 10px;
+
+}
+
+.formR{
+    padding: 5px;
+}
+
+
+
+
+/* BOOOOOOOOOTS */
+
+.btn-primary{
+    background-color: #764284;
+}
