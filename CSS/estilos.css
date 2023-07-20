@@ -2,12 +2,10 @@
 /* GENERAL */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 20px;
     font-family: 'Fugaz One', cursive;
-    background-color: white;
 
 }
 
@@ -15,214 +13,111 @@ body {
     background-color: white;
     padding: 0;
     margin: 0;
-    width: 100%;
 }
 
-@import "../bootstrap-5.3.0-dist.zip";
+
+
 
 /* CABECERA */
 
+
 .header{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-decoration: none;
-    background-color: black;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.navegadores{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: black;
-}
-
-.logo1{
-    display: flex;
-    width: 370px;
-}
-.nav-links{
-    display: flex;
-    list-style-type: none;
-    background-color: black;
-
-
-}
-
-colum
-
-.nav-links li a:hover {
-    background-image: linear-gradient(150deg, #9500ff, rgb(93, 8, 119), #764284);
-    color: black;
-    border-radius: 10px;
-    background-color: black;
-  }
-.nav-links li a{
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px;
-    font-family: 'Fugaz One', cursive;
-    color: white;
-    background-color: black;
-
-}
-
-
-/* .header {
-    background-color: black;
+    background-color: #1b3039;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 10px;
-    width: 100%;
-
+    height: 5rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
-.logo{
-    display: flex;
-
-}
-
-.header .logo {
+.header .logo{
     cursor: pointer;
+    margin-right: auto;
 }
 
-.header .logo img {
-    height: 100px;
+.img .logodeuna {
+    display: block;
+    margin: 0 auto;
+  }
+
+.header .logo img{
+    height: 70px;
     width: auto;
-    margin-right: 20px;
+    transition: all 0.3s;
 }
 
-.header .logo img:hover {
+.header .logo img:hover{
     transform: scale(1.2);
 }
 
-.header .nav-links {
+.header .nav-links{
     list-style: none;
-    display: flex;
-    justify-content: center;
-
 }
 
-.header .nav-links li {
-    display: flex;
-    padding: 0 20px;
-    justify-content: center;
-    text-decoration: none;
-
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
 }
 
-.header .nav-links li:hover {
+.logodeuna{
+    display: flex;
+    width: 10rem;
+}
+
+.header .nav-links li:hover{
     transform: scale(1.1);
 }
 
-.header .nav-links a {
-    color: white;
-    text-decoration: none;
-
-}
-
-.header .nav-links li a:hover {
-    color: #d96cc7;
-} */
-
-.botonr{
-    text-decoration: none;
-    font-family: 'Fugaz One', cursive;
+.nav-links{
     display: flex;
-
-}
-
-.btn{
-    background-color: black;
-    font-family: 'Fugaz One', cursive;
+    justify-content: center;
     align-items: center;
-    display: flex;
-
 }
 
-.header .btn button {
-    border: 0;
-    background-image: linear-gradient(150deg, #9500ff, rgb(93, 8, 119), #764284);
-    border-radius: 8px;
-    color: #fff;
-    font-size: 18px;
-    padding: 12px;
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;  
+    display: flex;  
+}
+
+.header .nav-links li a:hover{
+    color: #764284;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    width: auto;
 }
 
-.header .btn button:hover {
-    background-color: #111;
-    padding: 16px 24px;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-@media screen and (max-width: 767px) {
-
-  }
-.logo1 {
-    width: 250px;
-    }
-    
-.logo{
-    display: flex;
-    align-items: center;
-    background-color: black;
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #764284;
+    transform: scale(1.1);
 }
 
 
-.nav-links {
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    }
-
-.nav-links li a {
-    padding: 5px;
-}
-
-.btn {
-    margin-top: 10px;
-    }
 
 
-
-/* Media para hacerlo responsive */
-
-/* @media (max-width: 100%) {
-.header {
-    padding: 5px 5%;
-    } */
-
-/* .header .nav-links li {
-    padding: 0 10px;
-    background-color: black;
-    } */
+/* otra cosa */
 
 
-@media (min-width: 7480px) {
-    .header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .header .logo {
-        margin-bottom: 10px;
-    }
-
-    .header .nav-links li {
+.cabeza .nav-links li {
         display: block;
         padding: 10px 0;
         text-align: center;
         background-color: black;
     }
-}
+
 
 .espacio{
     display: block;
@@ -255,12 +150,6 @@ colum
 
 /* IMAGENES  QUE SE MUEVEN*/
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: lato;
-}
-
 h2 {
     text-align: center;
     font-size: 2rem;
@@ -268,7 +157,7 @@ h2 {
 }
 
 .slider-frame {
-	width: 900px;
+	width: 80%;
     height: auto;
 	margin:50px auto 0;
 	overflow: hidden;
@@ -316,36 +205,50 @@ h2{
 
 /* TARJETAS DE PRODUCTOS CARDS */
 
-.Productos {
-    display: flex;
-    justify-content: center; /* Centra  los elementos dentro del contenedor */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.produ{
+    display: grid;
+    grid-auto-rows: 25; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 80px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    margin: 30px;
-    width: 400px;
-    height: 600px;
     display: flex;
+    padding: 20px;   
     flex-direction: column;
-    justify-content: space-evenly;
     font-family: 'Fugaz One', cursive;
+    text-align: center;
+    width: 270px;
+    height: 50px;
+    justify-content: center
+
 }
 
 .cardimg{
-    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    min-width: 9rem;
+}
+
+.botoncompra{
+    padding: 5px;
+    margin: 3px;
 }
 
 .price {
     color: grey;
     font-size: 22px;
     font-family: 'Fugaz One', cursive;
+}
+
+.tituloprod{
+    font-size: 1rem;
+    text-align: center;
 }
 
 button {
@@ -356,10 +259,11 @@ button {
     overflow: hidden;
     border-radius: 0.6em;
     margin: 6px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
-.gradient {
+/* .gradient {
 
     width: 100%;
     height: 100%;
@@ -368,151 +272,149 @@ button {
     border-radius: 0.6em;
     margin-top: -0.25em;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-}
+} */
 
-.label {
+.label :active{
     top: -1px;
     text-align: center;
     display: inline-block;
     color: white;
     font-family: 'Fugaz One', cursive;
-    background-color: #764284;
+    background-color: #5e2f6b;
 }
 
 button:hover .transition {
-    width: 14em;
-    height: 14em;
+
 }
 
 button:active {
     transform: scale(0.97);
+    background-color: #5e2f6b;
 }
 
 
 /*PIE DE PAGINA*/
 
-.pie-pagina{
-    width: 100%;
-    background-color: black;
+footer{
+    background-color: #1b3039;
 }
-.pie-pagina .footerpie1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-    background-color: black;
 
-}
-.pie-pagina .footerpie1 .boxpie figure{
+.FooterContainer{
     width: 100%;
-    height: 100%;
+    padding: 70px 30px 20px;
+    margin-top: 20px;
+}
+
+.SocialIcons{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: black;
 
 }
-.pie-pagina .footerpie1 .boxpie figure img{
-    width: 350px;
-    background-color: black;
 
-}
-.pie-pagina .footerpie1 .boxpie h2{
-    color: white;
-    background-color: black;
-    font-size: 20px;
-    font-family: 'Fugaz One', cursive;
-
-}
-.pie-pagina .footerpie1 .boxpie p{
-    color: white;    background-color: black;
-}
-.pie-pagina .footerpie1 .red-social a{
-    display: inline-block;
+.SocialIcons a{
     text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.SocialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.SocialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.SocialIcons a:hover i{
     color: white;
-    margin-right: 10px;
-    background-color: white ;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .footerpie1 .red-social a:hover{
-    color: aqua;
-    background-color: black;
-
-}
-.pie-pagina .footerpie2{
-    background-color: #83abbc;
-    padding: 15px 10px;
-    text-align: center;
-    color: #764284;
-    background-color: black;
-
-}
-.pie-pagina .footerpie2 small{
-    font-size: 15px;
-    background-color: black;
+    transition: 0.5s;
 }
 
-.red-social{
-    background-color: black;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+.footernav{
+    margin: 30px 0;
+
 }
 
-.siguenos{
-    background-color: black;
-}
-
-.box{
-    background-color: black;
-}
-
-.logopie{
-    background-color: black;
+.footernav ul{
     display: flex;
     justify-content: center;
+    list-style-type: none;
+
 }
 
-.redes{
-    width: 100%;
-    height: 100%;
-    background-color: black;
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
-@media screen and (max-width:100%){
-    .pie-pagina .footerpie1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
+.footernav ul li a:hover{
+    opacity: 1;
 }
+
+.FooterBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.FooterBottom a{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*MERCADO PAGO*/
-.mercado {
+
+.mercadopago{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imagenmercado {
-    max-width: 100%;
-    max-height: 100%;
-}
+.img-mercadopago{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
 
 
-.container {
-    padding: 20px;
 }
+
+.div-mercadopago{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
 
 /* SUBITULOS */
 .subtitulonike {
@@ -533,7 +435,7 @@ button:active {
 
 .imgnocta{
     display: flex;
-    width: 600px;
+    width: 50%;
     padding: 10px;
     margin: 10px;
 }
@@ -542,7 +444,7 @@ button:active {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 720px 240px;
+    grid-template-columns: 50% 15%;
     gap: 10px;
     justify-content: center;
     align-items: stretch;
@@ -595,9 +497,18 @@ button:active {
     justify-content: center;
 }
 
-.infoh3{
-    display: flex
+.infoh3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+
+.informacion p{
+    display: flex;
+}
+
 
 
 /* MEDDIO DE PAGO INFO */
@@ -742,6 +653,8 @@ button:active {
 }
 
 
+
+
 .btn-fieldR button.disable {
     background-color: white;
     color: #2c2f35;
@@ -753,22 +666,28 @@ button:active {
     width: 270px;
 }
 
-.olvide{
+.olvide {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     margin: 10px;
+    flex-direction: column;
+    color: black;
 }
 
-div.input-groupR{
+
+.div.input-groupR{
     border-radius: 10px;
 }
 
-.formularioR{
+.formularioR {
     border-radius: 10px;
-
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formR{
@@ -778,8 +697,141 @@ div.input-groupR{
 
 
 
+
+
+
 /* BOOOOOOOOOTS */
 
-.btn-primary{
-    background-color: #764284;
+.accordion{
+    width: 80%;
 }
+
+.BootA{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+/* MEDIAQUERYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY */
+
+/* ESTILOS PARA MOVILES*/
+
+@media only screen and (max-width: 876px) {
+    .header{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   }
+
+    .header .logo{
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .header .nav-links{
+        display: flex;
+    }
+    .header .nav-links li{
+        display: flex;
+    }
+
+    .produ{
+        grid-template-columns: repeat(2, 1fr);
+        width: 1fr;
+        height: 1fr;
+        gap: 15px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logodeuna{
+        display: flex;
+        width: 10rem;
+    }
+
+    .logo img {
+        height: 70px;
+        transition: all 0.3s;
+        justify-content: center;
+        align-items: center;
+        display: flex;}
+    
+    .produ{
+        display: grid;
+        justify-items: center;
+            }
+
+
+    .footernav ul{
+        flex-direction: column;
+    }
+
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nocta{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .imgnocta {
+        width: 80%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+}
+
+@media only screen and (max-width: 680px) {
+    .produ{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    justify-items: center;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;    }
+
+    .header{
+        height: auto;
+    }
+
+  }
+
+
+  
+
+
+
+
+
+
+
+  
