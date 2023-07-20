@@ -163,18 +163,15 @@ h2 {
 
 
 .slider-frame {
-<<<<<<< HEAD
     overflow: hidden;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 2rem;
-=======
 	width: 80%;
     height: auto;
 	margin:50px auto 0;
 	overflow: hidden;
     border: 30px #83abbc;
->>>>>>> f2f42212e099f19d1bd3c3e652eb5ca72155fc40
 }
 
 .slider-frame ul {
@@ -223,14 +220,11 @@ h2{
     grid-auto-rows: 25; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 80px;
-<<<<<<< HEAD
     margin: 0 auto;
     margin-left: 10%;
     margin-right: 10%;
-=======
     width: 80%;
     margin: 0 auto;
->>>>>>> f2f42212e099f19d1bd3c3e652eb5ca72155fc40
 }
 
 .card {
