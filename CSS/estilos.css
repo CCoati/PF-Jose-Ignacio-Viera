@@ -1,4 +1,3 @@
-
 /* GENERAL */
 
 * {
@@ -97,6 +96,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: auto;
+    margin: 0;
 }
 
 .header .btn button:hover{
@@ -329,11 +329,13 @@ footer{
 }
 
 .SocialIcons a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;
+  text-decoration: none;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 12px;
+  align-items: center;
+  display: flex;
 }
 
 .SocialIcons a i{
@@ -741,6 +743,9 @@ footer{
         flex-direction: column;
         align-content: center;
         align-items: center; 
+        margin: 0;
+        padding: 0;
+        gap: 8px;
 
     }
 
@@ -825,6 +830,7 @@ footer{
         display: grid;
         justify-content: center;
         justify-items: center;
+        grid-template-columns: 120px 120px;
     }
 
     .footernav{
