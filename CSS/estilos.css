@@ -75,7 +75,7 @@ body {
 }
 
 .header .nav-links a{
-    font-size: 700;
+    font-size: 25px;  
     color: #eceff1;
     text-decoration: none;  
     display: flex;  
@@ -94,7 +94,7 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     width: auto;
     margin: 0;
 }
@@ -102,7 +102,7 @@ body {
 .header .btn button:hover{
     background-color: #e2f1f8;
     color: #764284;
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 
@@ -237,7 +237,7 @@ h2{
     text-align: center;
     width: 270px;
     height: 50px;
-    justify-content: center
+    justify-content: space-between;
     
 
 }
@@ -250,10 +250,7 @@ h2{
     min-width: 9rem;
 }
 
-.botoncompra{
-    padding: 5px;
-    margin: 3px;
-}
+
 
 .price {
     color: grey;
@@ -266,31 +263,83 @@ h2{
     text-align: center;
 }
 
-button {
-    padding: 10px ;
-    background: #764284;
-    color: white;
-    border: none;
-    overflow: hidden;
-    border-radius: 0.6em;
-    margin: 6px;
+
+/*** ESTILOS BOTÓN GROW SKEW ***/
+
+.botonescard{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+
+}
+
+
+.ov-btn-grow-skew {
+    background: #5e2f6b;
+    color: white; 
+    border: 2px solid #5e2f6b; 
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    margin: 5px;
     justify-content: center;
-}
+    align-items: center;
+  }
+  .ov-btn-grow-skew:hover {
+    color: #5e2f6b;
 
-.label :active{
-    top: -1px;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    font-family: 'Fugaz One', cursive;
-    background-color: #5e2f6b;
-}
+  }
+  .ov-btn-grow-skew::after {
+    content: "";
+    background: white; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
 
-button:active {
-    transform: scale(0.97);
-    background-color: #5e2f6b;
-}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* COURAGE ADAMS VANS */
@@ -724,10 +773,11 @@ footer{
     .header{
         display: flex;
         flex-wrap: nowrap;
-        height: 15rem;
+        height: 16rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;   }
+        align-items: center;
+    }
 
     .header .logo{
         display: flex;
