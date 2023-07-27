@@ -201,6 +201,16 @@ h2{
     font-family: 'Fugaz One', cursive;
 
 }
+/* PRODU DE 4 */
+
+.produde4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem 10%;
+    justify-items: center;
+    grid-template-rows: max-content;
+}
 
 
 /* TARJETAS DE PRODUCTOS CARDS */
@@ -934,6 +944,7 @@ footer{
     }
 
 
+
   }
 
 @media only screen and (max-width: 1370px) {
@@ -942,15 +953,25 @@ footer{
         flex-wrap: nowrap;
         overflow: scroll;
         margin: 1rem;
-        align-items: center;
-        justify-content: center;
-        
+
     }
-    
-    /* .elemento{
-        flex: 1 0 auto;
-        margin: 0.5rem 0;
-    } */
+
+    .produde4{
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .produde4{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin: 1rem;
+
+    }
 }
 
 
