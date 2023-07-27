@@ -207,28 +207,35 @@ h2{
 
 .produ{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     justify-items: center;
     grid-template-rows: max-content;
+
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 1rem;
+    padding: 0;
+    display: flex;
 
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
-    padding: 20px;   
     flex-direction: column;
     font-family: 'Fugaz One', cursive;
     text-align: center;
     width: 270px;
-    height: 50px;
+    height: 500px;
     justify-content: space-between;
-    padding: 20px;
-
+    padding: 15px;
+    align-items: center;
     
 
 }
@@ -313,6 +320,7 @@ h2{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    margin-bottom: 1rem;
 }
 
 .videobmx{
@@ -363,12 +371,14 @@ h2{
 
 footer{
     background-color: #1b3039;
+    margin: 0;
+    padding: 0;
 }
 
 .FooterContainer{
     width: 100%;
-    padding: 70px 30px 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .SocialIcons{
@@ -376,6 +386,13 @@ footer{
     justify-content: center;
 
 }
+
+.logofoot{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
 
 .SocialIcons a{
   text-decoration: none;
@@ -447,6 +464,29 @@ footer{
     margin: 0px 5px;
 }
 
+/* CARRUSEL */
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 2rem ;
+    gap: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 0;
+
+}
+
+
+
+
+
+
 /*MERCADO PAGO*/
 
 .mercadopago{
@@ -517,16 +557,23 @@ footer{
     margin-right: 7%;
 }
 
+.secondary-image{
+    padding: 0;
+    margin: 0
+    ;
+}
+
 .column-a img {
     width: 100%;
     height: 100%;
-    padding-bottom: 5px;
 }
 
+
 .column-b {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
     gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .secondary-image img {
@@ -806,13 +853,6 @@ footer{
 
     }
 
-    .produ{
-        grid-template-columns: repeat(2, 1fr);
-        width: 1fr;
-        height: 1fr;
-        gap: 15px;
-    }
-
     .logo{
         display: flex;
         justify-content: center;
@@ -831,12 +871,6 @@ footer{
         align-items: center;
         display: flex;}
     
-    .produ{
-        display: grid;
-        justify-items: center;
-            }
-
-
     .footernav ul{
         flex-direction: column;
         display: flex;
@@ -868,13 +902,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 680px) {
-    .produ{
-    grid-template-columns: repeat(1, 1fr);
-    display: grid;
-    justify-items: center;
-}
-}
+
 
 @media only screen and (max-width: 480px) {
 
@@ -895,12 +923,24 @@ footer{
         grid-template-columns: 120px 120px;
     }
 
-    .footernav{
-        
-    }
-
 
   }
+
+@media only screen and (max-width: 1370px) {
+    .produ{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin: 0 0 1rem;
+        
+    }
+    
+    .elemento{
+        flex: 1 0 auto;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
+
 
 
   
