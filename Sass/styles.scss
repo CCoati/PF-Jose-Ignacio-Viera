@@ -1,0 +1,83 @@
+
+
+/* GENERAL */
+
+$font-family: 'Fugaz One', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: $font-family;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* CABECERA */
+
+$header-bg-color: #1b3039;
+$link-color: #eceff1;
+$link-hover-color: #764284;
+$btn-bg-color: #eceff1;
+$btn-color: #1b3039;
+$btn-hover-bg-color: #e2f1f8;
+$btn-hover-color: #764284;
+
+/* DESTACADO */
+
+$font-family: 'Fugaz One', cursive;
+$destacado-bg-color: white;
+$destacado-padding: 10px;
+$destacado-text-align: center;
+$destacado-margin: 25px;
+
+
+
+/* IMAGENES  QUE SE MUEVEN */
+
+$font-family: 'Fugaz One', cursive;
+$heading-color: #764284;
+$slider-frame-margin: 50px;
+$slider-frame-width: 80%;
+$slide-duration: 20s;
+
+
+/* PIE DE PAGINA */
+
+$footer-bg-color: #1b3039;
+$footer-padding: 70px 30px 20px;
+$social-icon-bg-color: white;
+$social-icon-size: 2em;
+$social-icon-color: black;
+$social-icon-opacity: 0.9;
+$footer-nav-margin: 30px;
+$footer-nav-item-color: white;
+$footer-nav-item-size: 1.3em;
+$footer-nav-item-opacity: 0.7;
+$footer-bottom-bg-color: #000;
+$footer-bottom-padding: 20px;
+$footer-bottom-item-color: white;
+$designer-opacity: 0.7;
+$designer-text-transform: uppercase;
+$designer-letter-spacing: 1px;
+$designer-font-weight: 400;
+
+
+
+/* MERCADO PAGO */
+
+$mercado-pago-margin: 20px;
+$mercado-pago-margin-bottom: 30px;
+
+
+
+
+
+
+
+
+

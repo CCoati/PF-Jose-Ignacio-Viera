@@ -14,9 +14,6 @@ body {
     margin: 0;
 }
 
-
-
-
 /* CABECERA */
 
 
@@ -28,6 +25,7 @@ body {
     height: 5rem;
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header .logo{
@@ -52,6 +50,8 @@ body {
 
 .header .nav-links{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .header .nav-links li{
@@ -105,9 +105,6 @@ body {
     transform: scale(1.5);
 }
 
-
-
-
 /* otra cosa */
 
 
@@ -117,16 +114,6 @@ body {
         text-align: center;
         background-color: black;
     }
-
-
-.espacio{
-    display: block;
-    width: 10px;
-    height: 30px;
-    background-color: #111;
-
-}
-
 
 
 .div .travis{
@@ -158,7 +145,10 @@ h2 {
 
 .correrimg{
     display: flex;
-    width: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -217,15 +207,14 @@ h2{
 
 .produ{
     display: grid;
-    grid-auto-rows: 25; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 80px;
-    margin: 0 auto;
     margin-left: 10%;
     margin-right: 10%;
-    width: 80%;
     margin-top: 2rem;
     justify-items: center;
+    grid-template-rows: max-content;
+
 }
 
 .card {
@@ -238,6 +227,8 @@ h2{
     width: 270px;
     height: 50px;
     justify-content: space-between;
+    padding: 20px;
+
     
 
 }
@@ -296,7 +287,7 @@ h2{
   }
   .ov-btn-grow-skew::after {
     content: "";
-    background: white; /* color de fondo hover */
+    background: white;
     position: absolute;
     z-index: -1;
     padding: 16px 20px;
@@ -315,33 +306,6 @@ h2{
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* COURAGE ADAMS VANS */
 
 .Adamsimg1{
@@ -355,9 +319,45 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
 }
 
 
+/* GORRO DEMET */
+
+
+
+.gorroDemet{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imggorrodemet{
+    width: 16rem;
+}
+
+.textodemet{
+    display: flex;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 0;
+    min-width: 300px;
+    max-width: 36rem;
+}
+
+.subgorro{
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 /*PIE DE PAGINA*/
 
@@ -453,6 +453,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
 
 .img-mercadopago{
@@ -490,6 +493,8 @@ footer{
     display: flex;
     justify-content: center;
     padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
@@ -508,6 +513,8 @@ footer{
     gap: 10px;
     justify-content: center;
     align-items: stretch;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .column-a img {
@@ -844,15 +851,20 @@ footer{
         margin: 10px;
     }
 
-    .nocta{
+    .nocta {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+        margin: 0;
     }
 
     .imgnocta {
         width: 80%;
 }
+
+    .grid-container{
+        margin: 0;
+    }
 }
 
 
