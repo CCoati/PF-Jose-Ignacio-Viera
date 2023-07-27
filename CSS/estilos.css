@@ -209,9 +209,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 0.5rem;
+    margin: 1rem 10%;
     justify-items: center;
     grid-template-rows: max-content;
 
@@ -219,9 +217,10 @@ h2{
 
 .elemento{
     flex: 1 0 auto;
-    margin: 1rem;
+    margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 
 }
 
@@ -246,6 +245,7 @@ h2{
     align-items: center;
     height: 10rem;
     min-width: 9rem;
+
 }
 
 
@@ -518,13 +518,24 @@ footer{
 }
 
 
+
+
 /* SUBITULOS */
+
+
+.divsubs{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+
+}
 
 .subtitulonike {
     display: flex;
     justify-content: center;
     font-family: 'Fugaz One', cursive;
-
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -553,8 +564,7 @@ footer{
     gap: 10px;
     justify-content: center;
     align-items: stretch;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin: 2rem 7%;
 }
 
 .secondary-image{
@@ -931,14 +941,16 @@ footer{
         display: flex;
         flex-wrap: nowrap;
         overflow: scroll;
-        margin: 0 0 1rem;
+        margin: 1rem;
+        align-items: center;
+        justify-content: center;
         
     }
     
-    .elemento{
+    /* .elemento{
         flex: 1 0 auto;
-        margin: 0.5rem 0 0.5rem 0;
-    }
+        margin: 0.5rem 0;
+    } */
 }
 
 
