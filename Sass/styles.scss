@@ -1,58 +1,112 @@
-
-
-/* GENERAL */
-
-$font-family: 'Fugaz One', cursive;
-
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: $font-family;
-}
-
-body {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-}
-
 /* CABECERA */
 
 $header-bg-color: #1b3039;
-$link-color: #eceff1;
-$link-hover-color: #764284;
-$btn-bg-color: #eceff1;
-$btn-color: #1b3039;
-$btn-hover-bg-color: #e2f1f8;
-$btn-hover-color: #764284;
+$header-height: 5rem;
+$header-logo-height: 70px;
+$header-logo-hover-scale: 1.2;
+$header-link-hover-scale: 1.1;
+$header-link-color: #eceff1;
+$header-link-hover-color: #764284;
+$header-btn-color: #1b3039;
+$header-btn-hover-bg-color: #e2f1f8;
+$header-btn-hover-color: #764284;
+$header-btn-hover-scale: 1.5;
+$header-btn-font-weight: 700;
+$header-btn-padding: 9px 25px;
+$header-btn-border-radius: 50px;
+$header-btn-transition: all 0.5s ease 0s;
+$header-nav-link-padding: 0 20px;
 
-/* DESTACADO */
+.header {
+  background-color: $header-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 
-$font-family: 'Fugaz One', cursive;
-$destacado-bg-color: white;
-$destacado-padding: 10px;
-$destacado-text-align: center;
-$destacado-margin: 25px;
+  .logodeuna {
+    cursor: pointer;
+    margin-right: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logodeuna {
+    height: $header-logo-height;
+    width: auto;
+    transition: all 0.3s;
+  }
+
+  .logodeuna img:hover {
+    transform: scale($header-logo-hover-scale);
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      padding: $header-nav-link-padding;
+
+      a {
+        font-size: 25px;
+        color: $header-link-color;
+        text-decoration: none;
+        display: flex;
+
+        &:hover {
+          color: $header-link-hover-color;
+          transform: scale($header-link-hover-scale);
+        }
+      }
+    }
+  }
+
+  .btn {
+    button {
+      margin-left: 20px;
+      font-weight: $header-btn-font-weight;
+      color: $header-btn-color;
+      padding: $header-btn-padding;
+      background: $header-link-color;
+      border: none;
+      border-radius: $header-btn-border-radius;
+      cursor: pointer;
+      transition: $header-btn-transition;
+      width: auto;
+      margin: 0;
+
+      &:hover {
+        background-color: $header-btn-hover-bg-color;
+        color: $header-btn-hover-color;
+        transform: scale($header-btn-hover-scale);
+      }
+    }
+  }
+}
 
 
 
-/* IMAGENES  QUE SE MUEVEN */
 
-$font-family: 'Fugaz One', cursive;
-$heading-color: #764284;
-$slider-frame-margin: 50px;
-$slider-frame-width: 80%;
-$slide-duration: 20s;
+
+
+
+
 
 
 /* PIE DE PAGINA */
 
+$Color1: #1b3039;
+$Color2: #000;
 $footer-bg-color: #1b3039;
 $footer-padding: 70px 30px 20px;
 $social-icon-bg-color: white;
 $social-icon-size: 2em;
-$social-icon-color: black;
 $social-icon-opacity: 0.9;
 $footer-nav-margin: 30px;
 $footer-nav-item-color: white;
@@ -61,23 +115,242 @@ $footer-nav-item-opacity: 0.7;
 $footer-bottom-bg-color: #000;
 $footer-bottom-padding: 20px;
 $footer-bottom-item-color: white;
+
+.FooterBottom{
+    background-color: $Color2;
+    padding: $footer-bottom-padding;
+    text-align: center;
+
+    a{
+        color: $social-icon-bg-color;
+    }
+}
+
+$footer-margin: 30px;
+$footer-link-margin: 20px;
+$footer-link-opacity: 0.7;
+
+.footernav {
+  margin: $footer-margin 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+    li a {
+      color: white;
+      margin: $footer-link-margin;
+      text-decoration: none;
+      font-size: 1.3em;
+      opacity: $footer-link-opacity;
+      transition: 0.5s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+$footer-bg-color: #1b3039;
+$footer-container-padding: 10px;
+$footer-container-margin-top: 10px;
+$social-icon-margin: 10px;
+$social-icon-bg-color: white;
+$social-icon-border-radius: 50px;
+$social-icon-padding: 12px;
+$social-icon-font-size: 2em;
+$social-icon-color: black;
+$social-icon-hover-bg-color: #111;
+$social-icon-hover-transition: 0.5s;
+$social-icon-hover-color: white;
 $designer-opacity: 0.7;
 $designer-text-transform: uppercase;
 $designer-letter-spacing: 1px;
 $designer-font-weight: 400;
+$designer-margin: 0 5px;
+
+footer {
+  background-color: $footer-bg-color;
+  margin: 0;
+  padding: 0;
+
+  .FooterContainer {
+    width: 100%;
+    padding: $footer-container-padding;
+    margin-top: $footer-container-margin-top;
+
+    .SocialIcons {
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        background-color: $social-icon-bg-color;
+        margin: $social-icon-margin;
+        border-radius: $social-icon-border-radius;
+        padding: $social-icon-padding;
+        align-items: center;
+        display: flex;
+
+        i {
+          font-size: $social-icon-font-size;
+          color: $social-icon-color;
+          opacity: 0.9;
+        }
+
+        &:hover {
+          background-color: $social-icon-hover-bg-color;
+          transition: $social-icon-hover-transition;
+        }
+
+        &:hover i {
+          color: $social-icon-hover-color;
+          transition: $social-icon-hover-transition;
+        }
+      }
+    }
+  }
+
+  .logofoot {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .designer {
+    opacity: $designer-opacity;
+    text-transform: $designer-text-transform;
+    letter-spacing: $designer-letter-spacing;
+    font-weight: $designer-font-weight;
+    margin: $designer-margin;
+  }
+}
 
 
 
-/* MERCADO PAGO */
+/* MEDIA QUERIES */
 
-$mercado-pago-margin: 20px;
-$mercado-pago-margin-bottom: 30px;
-
-
-
-
-
-
-
-
-
+/* Max width: 876px */
+@media only screen and (max-width: 876px) {
+    .header {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 16rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+  
+    .header .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      gap: 8px;
+    }
+  
+    .logodeuna {
+      display: flex;
+      width: 10rem;
+    }
+  
+    .logo img {
+      height: 70px;
+      transition: all 0.3s;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .footernav ul {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .footernav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .nocta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .imgnocta {
+      width: 80%;
+    }
+  
+    .grid-container {
+      margin: 0;
+    }
+  }
+  
+  /* Max width: 480px */
+  @media only screen and (max-width: 480px) {
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+  
+    .header {
+      height: auto;
+    }
+  
+    .SocialIcons {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: 120px 120px;
+    }
+  }
+  
+  /* Max width: 1370px */
+  @media only screen and (max-width: 1370px) {
+    .produ {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      margin: 1rem;
+  
+      .produde4 {
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
+  
+  /* Max width: 700px */
+  @media only screen and (max-width: 700px) {
+    .produde4 {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      margin: 1rem;
+    }
+  }
+  

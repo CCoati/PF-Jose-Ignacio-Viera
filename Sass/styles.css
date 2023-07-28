@@ -1,15 +1,3 @@
-/* GENERAL */
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-family: "Fugaz One", cursive; }
-
-body {
-  background-color: white;
-  padding: 0;
-  margin: 0; }
-
 /* CABECERA */
 .header {
   background-color: #1b3039;
@@ -19,56 +7,242 @@ body {
   height: 5rem;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+}
+.header .logodeuna {
+  cursor: pointer;
+  margin-right: auto;
+  display: block;
+  margin: 0 auto;
+}
+.header .logodeuna {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+.header .logodeuna img:hover {
+  transform: scale(1.2);
+}
+.header .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header .nav-links li a {
+  font-size: 25px;
+  color: #eceff1;
+  text-decoration: none;
+  display: flex;
+}
+.header .nav-links li a:hover {
+  color: #764284;
+  transform: scale(1.1);
+}
+.header .btn button {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  width: auto;
+  margin: 0;
+}
+.header .btn button:hover {
+  background-color: #e2f1f8;
+  color: #764284;
+  transform: scale(1.5);
+}
+
+/* PIE DE PAGINA */
+.FooterBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.FooterBottom a {
+  color: white;
+}
+
+.footernav {
+  margin: 30px 0;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.footernav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footernav ul li a:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #1b3039;
+  margin: 0;
+  padding: 0;
+}
+footer .FooterContainer {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+footer .FooterContainer .SocialIcons {
+  display: flex;
+  justify-content: center;
+}
+footer .FooterContainer .SocialIcons a {
+  text-decoration: none;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 12px;
+  align-items: center;
+  display: flex;
+}
+footer .FooterContainer .SocialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+footer .FooterContainer .SocialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+footer .FooterContainer .SocialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+footer .logofoot {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+footer .designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+/* MEDIA QUERIES */
+/* Max width: 876px */
+@media only screen and (max-width: 876px) {
+  .header {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .header .logo {
-    cursor: pointer;
-    margin-right: auto; }
-    .header .logo .logodeuna {
-      display: block;
-      margin: 0 auto; }
-    .header .logo img {
-      height: 70px;
-      width: auto;
-      transition: all 0.3s; }
-      .header .logo img:hover {
-        transform: scale(1.2); }
-  .header .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .header .nav-links li {
-      display: inline-block;
-      padding: 0 20px; }
-      .header .nav-links li:hover {
-        transform: scale(1.1); }
-      .header .nav-links li a {
-        font-size: 25px;
-        color: #eceff1;
-        text-decoration: none;
-        display: flex; }
-        .header .nav-links li a:hover {
-          color: #764284; }
-  .header .btn button {
-    margin-left: 20px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.5s ease 0s;
-    width: auto;
-    margin: 0; }
-    .header .btn button:hover {
-      background-color: #e2f1f8;
-      color: #764284;
-      transform: scale(1.5); }
-
-/* DESTACADO */
-/* IMAGENES  QUE SE MUEVEN */
-/* PIE DE PAGINA */
-/* MERCADO PAGO */
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .header .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+  }
+  .logodeuna {
+    display: flex;
+    width: 10rem;
+  }
+  .logo img {
+    height: 70px;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footernav ul {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .footernav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .nocta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .imgnocta {
+    width: 80%;
+  }
+  .grid-container {
+    margin: 0;
+  }
+}
+/* Max width: 480px */
+@media only screen and (max-width: 480px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .header {
+    height: auto;
+  }
+  .SocialIcons {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 120px 120px;
+  }
+}
+/* Max width: 1370px */
+@media only screen and (max-width: 1370px) {
+  .produ {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 1rem;
+  }
+  .produ .produde4 {
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+/* Max width: 700px */
+@media only screen and (max-width: 700px) {
+  .produde4 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
