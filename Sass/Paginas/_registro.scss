@@ -1,0 +1,142 @@
+// REGISTRO
+
+@use '../Variables/variables';
+
+.containerR {
+    width: 1fr;
+    height: 900px;
+    background-color: $Color4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Imagenes/zyro-image.png');
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+  }
+  
+  .form-contentR {
+    width: 100%;
+    margin: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    opacity: 95%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form-contentR h1 {
+    margin-bottom: 60px;
+    color: $Color4;
+    position: relative;
+    background: transparent;
+    font-size: 50px;
+    font-family: $font-family;
+  }
+  
+  .form-contentR h1::after {
+    content: '';
+    width: 30px;
+    border-radius: 3px;
+    background: $Color3;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+  }
+  
+  .input-fieldR {
+    margin: 15px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .inputR { 
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: $Color4;
+    &::placeholder {
+        color: $Color4;
+    }
+  }
+  
+  .input-fieldR i {
+    margin-left: 15px;
+    color: $Color3;
+  }
+  
+  .formR p {
+    color: $Color4;
+    text-align: left;
+    font-size: 13px;
+    a {
+        color: $Color3;
+        margin-left: 5px;
+    }
+  }
+  
+  .btn-fieldR {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  
+  .btn-fieldR button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: $Color3; 
+    color: $Color4;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-family: $font-family;
+  }
+  
+  .input-groupR {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: space-around;
+  }
+  
+  .btn-fieldR button.disable {
+    background-color: $Color4; 
+    color: $Color2; 
+  }
+  
+  .inputregistro {
+    border-radius: 10px;
+    padding: 10px;
+    width: 270px;
+  }
+  
+  .olvide {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+    color: $Color4; 
+  
+  }

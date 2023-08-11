@@ -1,0 +1,60 @@
+// IMAGEN QUE SE MUEVE
+
+@use '../Variables/variables';
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+    color: $Color3;
+    outline: $Color2;
+    font-family: 'Fugaz One', cursive;
+  }
+  
+  .correrimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-frame {
+    overflow: hidden;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border: 30px solid $Color4;
+  }
+  
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider-frame img {
+    width: 100%;
+  }
+  
+  @keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+  
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+  
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+  
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+  }

@@ -1,0 +1,207 @@
+// COSAS
+
+@use '../Variables/variables';
+
+.cabeza .nav-links li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background-color: $Color2; 
+  }
+  
+  .div .travis {
+    width: auto;
+    height: 10px;
+  }
+  
+  .destacado1 {
+    background-color: $Color4;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 25px;
+    font-family: $font-family;
+  }
+  
+  
+  // NOCTA NIKE GRID
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 15%;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2rem 7%;
+  
+    .secondary-image {
+        padding: 0;
+        margin: 0;
+    }
+  
+    .column-a img {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .column-b {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+    .secondary-image img {
+        width: 100%;
+        height: auto;
+    }
+  }
+  
+  
+  // MERCADO PAGO
+  
+  .mercadopago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+  }
+  
+  .img-mercadopago {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .div-mercadopago {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  // GORRO DEMET
+  
+  .gorroDemet {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .imggorrodemet {
+    width: 16rem;
+  }
+  
+  .textodemet {
+    display: flex;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 0;
+    min-width: 300px;
+    max-width: 36rem;
+  }
+  
+  .subgorro {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  
+  
+  // NIKE NOCTA Y MAS
+  
+  .divsubs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .subtitulonike {
+    display: flex;
+    justify-content: center;
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    color: $Color2;
+    opacity: 90%;
+  }
+  
+  .nocta {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .imgnocta {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  // BMX
+  
+  .Adamsimg1 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .videobmx {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* CARRUSEL */
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .elemento {
+    flex: 1 0 auto;
+    margin: 0;
+  }
+  
+  /* BOOOOOOOOOTS */
+  
+  .accordion {
+    width: 80%;
+  }
+  
+  .BootA {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }

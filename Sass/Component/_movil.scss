@@ -1,0 +1,225 @@
+/* ESTILOS PARA MOVILES */
+
+@use '../Variables/variables';
+
+@media only screen and (max-width: 876px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 16rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .logodeuna {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .header .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center; 
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .logodeuna {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+    }
+
+    .logodeuna img {
+        height: 70px;
+        transition: all 0.3s;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .footernav ul {
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nocta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .imgnocta {
+        width: 80%;
+    }
+
+    .grid-container {
+        margin: 0;
+    }
+
+    .correrimg {
+      display: flex;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .SocialIcons {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 120px 120px;
+    }
+
+}
+
+@media only screen and (max-width: 1370px) {
+    .produ {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin: 1rem;
+    }
+
+    .produde4 {
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .produde4 {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin: 1rem;
+        justify-content: flex-start;
+    }
+  }
+  
+  /* Max width: 480px */
+  @media only screen and (max-width: 480px) {
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+  
+    .header {
+      height: auto;
+    }
+  
+    .SocialIcons {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: 120px 120px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 876px) {
+    .header {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 16rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+  
+    .header .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      gap: 8px;
+    }
+  
+    .logodeuna {
+      display: flex;
+      width: 10rem;
+    }
+  
+    .logo img {
+      height: 70px;
+      transition: all 0.3s;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .footernav ul {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .footernav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .nocta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .imgnocta {
+      width: 80%;
+    }
+  
+    .grid-container {
+      margin: 0;
+    }
+  }

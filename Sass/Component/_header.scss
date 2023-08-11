@@ -1,0 +1,76 @@
+// CABECERA
+
+@use '../Variables/variables';
+
+.header {
+    background-color: $Color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+    .logodeuna {
+      cursor: pointer;
+      margin-right: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .logodeuna {
+      height: $header-logo-height;
+      width: auto;
+      transition: all 0.3s;
+    }
+  
+    .logodeuna img:hover {
+      transform: scale($header-logo-hover-scale);
+    }
+  
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        display: inline-block;
+        padding: $header-nav-link-padding;
+  
+        a {
+          font-size: 25px;
+          color: $Color4;
+          text-decoration: none;
+          display: flex;
+  
+          &:hover {
+            color: $Color3;
+            transform: scale($header-link-hover-scale);
+          }
+        }
+      }
+    }
+  
+    .btn {
+      button {
+        margin-left: 20px;
+        font-weight: $header-btn-font-weight;
+        color: $Color1;
+        padding: $header-btn-padding;
+        background: $Color4;
+        border: none;
+        border-radius: $btn-border-radius;
+        cursor: pointer;
+        transition: $header-btn-transition;
+        width: auto;
+        margin: 0;
+  
+        &:hover {
+          background-color: $Color4;
+          color: $Color3;
+          transform: scale($header-btn-hover-scale);
+        }
+      }
+    }
+  }

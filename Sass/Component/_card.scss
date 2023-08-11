@@ -1,0 +1,112 @@
+// CARDS
+
+@use '../Variables/variables';
+
+.produ {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem 10%;
+    justify-items: center;
+    grid-template-rows: max-content;
+  }
+  
+  .elemento {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family;
+    text-align: center;
+    width: 270px;
+    height: 500px;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+  
+    .cardimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        min-width: 9rem;
+    }
+  
+    .price {
+        color: $Color5;
+        font-size: 22px;
+        font-family: $font-family;
+    }
+  
+    .tituloprod {
+        font-size: 1rem;
+        text-align: center;
+    }
+  }
+  
+  /*** ESTILOS BOTÓN GROW SKEW ***/
+  
+  .botonescard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+  
+    .ov-btn-grow-skew {
+        background: $Color3;
+        color: $Color4; 
+        border: 2px solid $Color3; 
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        text-decoration: none;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+  
+        &:hover {
+            color: $Color3;
+        }
+  
+        &::after {
+            content: "";
+            background: white;
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            left: -20%;
+            right: -20%;
+            top: 0;
+            bottom: 0;
+            transform: skewX(-45deg) scale(0, 1);
+            transition: all 0.3s ease;
+        }
+  
+        &:hover::after {
+            transition: all 0.3s ease-out;
+            transform: skewX(-45deg) scale(1, 1);
+        }
+    }
+  }
+  
+  /* PRODU DE 4 */
+  
+.produde4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem 10%;
+    justify-items: center;
+    grid-template-rows: max-content;
+  }
